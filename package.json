@@ -1,11 +1,12 @@
 {
-  "name": "pjs",
+  "name": "pjs.js",
   "version": "1.0.0",
-  "description": "pjs",
+  "description": "pjs is a JS framework built for Vanilla Web Developers",
   "main": "server.js",
   "scripts": {
     "dev": "npx nodemon --ext js,css,pjs,html server.js"
   },
+  "private": false,
   "author": "jDev",
   "license": "GPL-3.0",
   "dependencies": {
