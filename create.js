@@ -32,10 +32,10 @@ function log() {
 }
 
 const start = Date.now();
-log(`Creating $RES$UND${process.argv[2]}$COL in $RES$UND${__dirname}$RES`);
+log(`Creating $RES$UND${process.argv[2]}$COL in $RES$UND${process.cwd()}$RES`);
 
 const installpath = path.dirname(process.argv[1]);
-const fspath = `${__dirname}/${process.argv[2]}/`;
+const fspath = `${process.cwd()}/${process.argv[2]}/`;
 log('Copying files...');
 copyFolderSync(installpath, fspath);
 
