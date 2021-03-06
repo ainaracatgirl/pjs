@@ -1,0 +1,12 @@
+module.exports = (req, res) => {
+    return res
+    .setHeader('server', 'pjs test')
+    .setHeader('Content-Type', 'application/json')
+    .status(200).json({
+        model: 'S',
+        price: 79990,
+        priceCurrency: 'USD',
+        fullName: 'Tesla Model S',
+        designURL: 'https://www.tesla.com/models/design'
+    });
+};

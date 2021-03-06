@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta name=parse_html content=true>
+
+    <meta name="description" content="pjs test">
+    <title>pjs test</title>
+
+    <link rel=stylesheet href="/App.css">
+    <link rel=preload href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"  as=style onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="shortcut icon" href="/favicon.png">
+</head>
+<body>
+    <noscript>
+        <h3>
+            This website won't work unless you enable JavaScript
+            <br>
+            as <i>pjs</i> cannot work without it.
+
+            <br><br><br>
+            Please enable JavaScript if you wish to use this website.
+        </h3>
+    </noscript>
+    <div id=root></div>
+
+    <script role=livereload>let lr=new WebSocket('ws://'+location.host);lr.onopen=e=>lr.k=true;lr.onclose=e=>lr.k&&location.reload();</script>
+    <script type=module src="/pjs.full.js"></script>
+</body>
+</html>

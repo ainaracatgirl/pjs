@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    margin: 1vh;
+    
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #222222;
+}
+
+img {
+    width: 256px;
+    height: 256px;
+    border-radius: 2vh;
+}
+
+button {
+    background-color: darkslateblue;
+    color: white;
+    border: 2px solid slateblue;
+    border-radius: 1vh;
+    padding: 1vh;
+    transition-duration: 100ms;
+    outline: none;
+}
+button:hover, button:active {
+    background-color: slateblue;
+    border-color: darkslateblue;
+}
+button:focus-visible {
+    outline: cornflowerblue solid 5px;
+}

@@ -1,0 +1,12 @@
+module.exports = (req, res) => {
+    return res
+    .setHeader('server', 'pjs test')
+    .setHeader('Content-Type', 'application/json')
+    .status(200).json({
+        model: null,
+        price: null,
+        priceCurrency: null,
+        fullName: req.placeholders.name,
+        designURL: null
+    });
+};
